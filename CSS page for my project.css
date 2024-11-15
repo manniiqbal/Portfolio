@@ -1,0 +1,208 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6347; /* Tomato */
+    background-image: linear-gradient(to right, #ff6347, #ff8c69);
+    color: white;
+    padding: 60px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ffdead; /* Lightened version of Tomato */
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light gray for section background */
+}
+
+/* Specific Section Styles */
+#home {
+    background-color: #e0f7fa; /* Light Cyan */
+}
+
+#about {
+    background-color: #ffeb3b; /* Yellow */
+}
+
+#portfolio {
+    background-color: #c5e1a5; /* Light Green */
+}
+
+#contact {
+    background-color: #fff3e0; /* Light Orange */
+}
+
+/* Headings for Sections */
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Portfolio Styles */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px; /* Padding for spacing */
+    margin: 0 auto; /* Centering the grid */
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center; /* Centering text within project cards */
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project h4 {
+    font-size: 1.5em;
+    color: #388e3c; /* Dark Green */
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.project a {
+    color: #0077cc; /* Blue link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto; /* Centering the form */
+}
+
+form label {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff6347; /* Tomato */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color: #ffdead; /* Lightened version of Tomato */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
